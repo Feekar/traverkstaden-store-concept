@@ -4,31 +4,26 @@ backend:
 media_folder: static/assets
 public_folder: assets
 collections:
-  - label: "Pages"
-    name: "pages"
+  - label: "Texter"
+    name: "texts"
     files:
-      - label: "About Page"
-        name: "about"
-        file: "src/testfiles/about.yml"
+      - label: "Introduktion"
+        name: "introduction"
+        file: "src/content/texts.yml"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Team
-            name: team
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Position, name: position, widget: string}
-              - {label: Photo, name: photo, widget: image}
-      - label: "Locations Page"
-        name: "locations"
-        file: "src/testfiles/locations.yml"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Locations
-            name: locations
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Address, name: address, widget: string}
+          - {label: Introduktion, name: introduction, widget: markdown}
+          - {label: Möbeltext, name: furnitureText, widget: markdown}
+          - {label: Målningstext, name: paintingText, widget: markdown}
+
+      # - label: "Locations Page"
+      #   name: "locations"
+      #   file: "src/testfiles/locations.yml"
+      #   fields:
+      #     - {label: Title, name: title, widget: string}
+      #     - {label: Intro, name: intro, widget: markdown}
+      #     - label: Locations
+      #       name: locations
+      #       widget: list
+      #       fields:
+      #         - {label: Name, name: name, widget: string}
+      #         - {label: Address, name: address, widget: string}
