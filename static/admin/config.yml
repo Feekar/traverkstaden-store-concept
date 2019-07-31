@@ -12,13 +12,11 @@ collections:
         file: "src/content/texts.yml"
         fields:
           - {label: Text, name: text, widget: markdown}
-      
       - label: "Möbeltext"
         name: "furnitureText"
         file: "src/content/texts.yml"
         fields:
           - {label: Text, name: text, widget: markdown}
-
       - label: "MålningsText"
         name: "paintingText"
         file: "src/content/texts.yml"
