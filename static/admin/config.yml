@@ -12,8 +12,8 @@ collections:
         file: "src/content/homepageTexts.md"
         fields:
           - {label: Introduktion, name: introductionText, widget: markdown}
-          - {label: Möbeltext, name: introductionText, widget: markdown}
-          - {label: Målningstext, name: introductionText, widget: markdown}
+          - {label: Möbeltext, name: furnitureText, widget: markdown}
+          - {label: Målningstext, name: paintingText, widget: markdown}
    
           
       # - label: "Locations Page"
