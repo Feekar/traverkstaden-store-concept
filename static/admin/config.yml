@@ -11,14 +11,14 @@ collections:
         name: "introduction"
         file: "src/content/introduction.md"
         fields:
-          - {label: Text, name: text, widget: markdown}
+          - {label: Text, name: text, widget: text}
           - {label: Bild, name: image, widget: image}
 
       - label: "Tjänster"
         name: "services"
         file: "src/content/services.md"
         fields:
-          - {label: Möber, name: furniture, widget: object, fields: [{label: Titel, name: title, widget: string}, {label: Text, name: text, widget: markdown}, {label: Bild, name: image, widget: image}]}
+          - {label: Möbler, name: furniture, widget: object, fields: [{label: Titel, name: title, widget: string}, {label: Text, name: text, widget: text}, {label: Bild, name: image, widget: image}]}
 
           
 
