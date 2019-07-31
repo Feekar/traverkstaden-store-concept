@@ -6,12 +6,16 @@ public_folder: assets
 collections:
   - label: "Texter"
     name: "texts"
-    folder: "src/content"
-    create: true
-    fields:
-      - {label: "Introduktionstext", name: "introductionText", widget: "markdown"}
-      - {label: "Möbeltext", name: "furnitureText", widget: "markdown"}
-
+    files:
+      - label: "Startsida"
+        name: "homepage"
+        file: "src/content/homepageTexts.md"
+        fields:
+          - {label: Introduktion, name: introductionText, widget: markdown}
+          - {label: Möbeltext, name: introductionText, widget: markdown}
+          - {label: Målningstext, name: introductionText, widget: markdown}
+   
+          
       # - label: "Locations Page"
       #   name: "locations"
       #   file: "src/testfiles/locations.yml"
