@@ -4,16 +4,28 @@ backend:
 media_folder: static/assets
 public_folder: assets
 collections:
-  - label: "Texter"
-    name: "texts"
+  - label: "Startsida"
+    name: "homepage"
     files:
-      - label: "Startsida"
-        name: "homepage"
-        file: "src/content/homepageTexts.md"
+      - label: "Introduktion"
+        name: "introduction"
+        file: "src/content/introduction.md"
         fields:
-          - {label: Introduktion, name: introductionText, widget: markdown}
-          - {label: Möbeltext, name: furnitureText, widget: markdown}
-          - {label: Målningstext, name: paintingText, widget: markdown}
+          - {label: Text, name: text, widget: markdown}
+          - {label: Bild, name: image, widget: image}
+
+      - label: "Möbler"
+        name: "furniture"
+        file: "src/content/furniture.md"
+        fields:
+          - {label: Titel, name: Titel, widget: string}
+          - {label: Text, name: text, widget: text}
+          - {label: Bild, name: image, widget: image}
+              
+          
+          
+          # - {label: Möbeltext, name: furnitureText, widget: markdown}
+          # - {label: Målningstext, name: paintingText, widget: markdown}
    
           
       # - label: "Locations Page"
