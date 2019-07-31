@@ -8,12 +8,22 @@ collections:
     name: "texts"
     files:
       - label: "Introduktion"
-        name: "introduction"
+        name: "introductionText"
         file: "src/content/texts.yml"
         fields:
-          - {label: Introduktion, name: introduction, widget: markdown}
-          - {label: Möbeltext, name: furnitureText, widget: markdown}
-          - {label: Målningstext, name: paintingText, widget: markdown}
+          - {label: Text, name: text, widget: markdown}
+      
+      - label: "Möbeltext"
+        name: "furnitureText"
+        file: "src/content/texts.yml"
+        fields:
+          - {label: Text, name: text, widget: markdown}
+
+      - label: "MålningsText"
+        name: "paintingText"
+        file: "src/content/texts.yml"
+        fields:
+          - {label: Text, name: text, widget: markdown}
 
       # - label: "Locations Page"
       #   name: "locations"
