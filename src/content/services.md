@@ -1,12 +1,7 @@
 ---
 furniture:
   image: /assets/67321734_2253406298111398_3304587269637144576_n.jpg
-  text: |-
-    Lite text
-    fjkösajfköaskl
-    linebreak
-
-    fsatest
+  text: test text
   title: En titel
 ---
 
