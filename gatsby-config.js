@@ -7,15 +7,16 @@
 module.exports = {
   /* Your site config here */
   plugins: [
-    "gatsby-plugin-netlify-cms",
-    "gatsby-transformer-remark",
-    "gatsby-transformer-yaml",
+    'gatsby-plugin-netlify-cms',
+    'gatsby-transformer-remark',
+    'gatsby-transformer-yaml',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "src",
+        name: 'src',
         path: `${__dirname}/src/`,
       },
     },
+    'gatsby-plugin-eslint',
   ],
-}
+};

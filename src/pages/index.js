@@ -1,9 +1,10 @@
-import React from "react"
+import React from 'react';
+import Introduction from '../components/introduction';
 
-const Index = () => {
-    return (
-        <div>Hello</div>
-    )
-}
+const Index = () => (
+  <main>
+    <Introduction />
+  </main>
+);
 
 export default Index;
