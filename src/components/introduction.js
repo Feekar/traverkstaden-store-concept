@@ -1,15 +1,26 @@
 import React from 'react';
-// import { graphql, useStaticQuery } from 'gatsby';s
+import { graphql, useStaticQuery } from 'gatsby';
 
-const Introduction = () => <span>test</span>;
-
-// const data = useStaticQuery(graphql`
-//   query {
-//     allMarkdownRemark {
-//       text
-//     }
-//   }
-// `);
+const Introduction = () => {
+  const data = useStaticQuery(graphql`
+    query {
+        allContentYaml{
+          edges{
+            node{
+              services{
+                          furniture{
+                  image
+                  text
+                }          
+              }
+            }
+          }
+        }
+      }
+    `);
+  console.log(data);
+  return <span>test</span>;
+};
 
 
 export default Introduction;
