@@ -7,17 +7,16 @@ const Introduction = () => {
         allContentYaml{
           edges{
             node{
-              services{
-                          furniture{
-                  image
-                  text
-                }          
+              introduction{
+                image
+                text
               }
             }
           }
         }
       }
     `);
+    //   const content = data.allContentYaml.edges.find(edge => edge.node.services !== null);
   console.log(data);
   return <span>test</span>;
 };
