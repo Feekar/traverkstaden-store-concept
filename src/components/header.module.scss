@@ -1,0 +1,29 @@
+.header{
+    max-width:75rem;
+    margin:0 auto;
+}
+
+.header nav{
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header a {
+    text-decoration: none;
+    padding: 2rem;
+    display: inline-block;
+    color: var(--color-black);
+}
+
+.header nav > a:first-of-type{
+    font-size:1.1rem;
+}
+
+.navLinks{
+    font-size: 0.9rem;
+}
+
+.navLinks .activeLink{
+    font-weight:default;
+}
