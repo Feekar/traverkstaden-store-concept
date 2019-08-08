@@ -9,8 +9,10 @@ const Introduction = () => {
           node {
             childMarkdownRemark {
               frontmatter {
-                text
-                image
+                introduction {
+                  text
+                  image
+                }
               }
             }
           }
