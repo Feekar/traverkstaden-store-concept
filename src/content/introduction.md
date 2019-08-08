@@ -5,7 +5,7 @@ text: |-
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-      non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-image: /assets/67321734_2253406298111398_3304587269637144576_n.jpg
+      non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...
+image: /assets/verkstad.jpeg
 ---
 
