@@ -28,3 +28,16 @@ const Introduction = () => {
 };
 
 export default Introduction;
+
+// query{
+//   file(name: {eq: "introduction"}) {
+//     childMarkdownRemark {
+//       frontmatter{
+//         introduction{
+//           text
+//           image
+//         }
+//       }
+//     }
+//   }
+// }
