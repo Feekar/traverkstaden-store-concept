@@ -2,7 +2,7 @@ backend:
   name: github
   repo: feekar/gardsloten-snickeri
 media_folder: src/images
-public_folder: src/images
+public_folder: assets
 collections:
   - label: 'Startsida'
     name: 'homepage'
@@ -11,13 +11,13 @@ collections:
     files:
       - label: 'Introduktion'
         name: 'introduction'
-        file: 'src/content/introduction.yml'
+        file: 'src/content/introduction.md'
         fields:
           - {
               label: Introduktion,
               name: introduction,
               widget: object,
-              file: 'src/content/introduction.yml',
+              file: 'src/content/introduction.md',
               fields:
                 [
                   { label: Text, name: text, widget: text },
@@ -27,7 +27,7 @@ collections:
 
       - label: 'Tjänster'
         name: 'services'
-        file: 'src/content/services.yml'
+        file: 'src/content/services.md'
         fields:
           - {
               label: Tjänster,
