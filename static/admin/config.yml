@@ -2,7 +2,7 @@ backend:
   name: github
   repo: feekar/gardsloten-snickeri
 media_folder: src/images
-public_folder: assets
+public_folder: images
 collections:
   - label: 'Startsida'
     name: 'homepage'

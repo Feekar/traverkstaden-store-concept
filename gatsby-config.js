@@ -3,12 +3,6 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
-const netlifyCmsPaths = {
-  resolve: 'gatsby-plugin-netlify-cms-paths',
-  options: {
-    cmsConfig: '/static/admin/config.yml',
-  },
-};
 
 module.exports = {
   siteMetadata: {
@@ -18,7 +12,8 @@ module.exports = {
     'gatsby-plugin-netlify-cms',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
-    netlifyCmsPaths,
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -36,23 +31,27 @@ module.exports = {
         path: `${__dirname}/src/content`,
       },
     },
-    'gatsby-plugin-eslint',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          netlifyCmsPaths,
+          // gatsby-remark-relative-images must
+          // go before gatsby-remark-images
+          {
+            resolve: 'gatsby-remark-relative-images',
+          },
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 930,
-              backgroundColor: 'transparent',
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 900,
             },
           },
         ],
       },
     },
+    'gatsby-plugin-eslint',
   ],
 };

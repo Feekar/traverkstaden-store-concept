@@ -1,27 +1,43 @@
 import React from 'react';
-// import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
+import BackgroundImage from 'gatsby-background-image';
+import styles from './introduction.module.scss';
 
 const Introduction = () => {
-  console.log('test');
+  const data = useStaticQuery(graphql`
+    query {
+      allFile(filter: { name: { eq: "introduction" } }) {
+        edges {
+          node {
+            childMarkdownRemark {
+              frontmatter {
+                introduction {
+                  image {
+                    childImageSharp {
+                      fluid(quality: 90, maxWidth: 4160) {
+                        ...GatsbyImageSharpFluid_withWebp
+                      }
+                    }
+                  }
+                  text
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
 
-  return <span>test</span>;
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     file(name: { eq: "introduction" }) {
-  //       childMarkdownRemark {
-  //         frontmatter {
-  //           introduction {
-  //             text
-  //             image
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // `);
-  // const content = data.file.childMarkdownRemark.frontmatter.introduction;
+  console.log(data);
+  const content = data.allFile.edges[0].node.childMarkdownRemark.frontmatter.introduction;
+  const imageData = content.image.childImageSharp.fluid;
 
-  // return <span>{content.text}</span>;
+  return (
+    <BackgroundImage Tag="section" fluid={imageData} backgroundColor="#040e18" className={styles.introductionContainer}>
+      <h3>{content.text}</h3>
+    </BackgroundImage>
+  );
 };
 
 export default Introduction;
