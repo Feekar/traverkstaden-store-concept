@@ -1,6 +1,6 @@
 ---
 introduction:
-  image: /images/redpainter.png
-  text: tsafsaf  asfsafsafas...
+  image: /images/arvid.png
+  text: tsafsaf  asfsafsafas....
 ---
 
