@@ -1,6 +1,6 @@
 ---
 introduction:
-  image: /images/redpainter.png
+  image: /images/todo.png
   text: tsafsaf  assssfsafsafas....saa
 ---
 
