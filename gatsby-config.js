@@ -3,6 +3,12 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
+const netlifyCmsPaths = {
+  resolve: 'gatsby-plugin-netlify-cms-paths',
+  options: {
+    cmsConfig: '/static/admin/config.yml',
+  },
+};
 
 module.exports = {
   siteMetadata: {
@@ -10,19 +16,43 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-netlify-cms',
-    'gatsby-transformer-remark',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
+    netlifyCmsPaths,
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         google: {
           families: ['Nunito Sans'],
         },
-        name: 'src',
-        path: `${__dirname}/src/`,
+        name: 'images',
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'content',
+        path: `${__dirname}/src/content`,
       },
     },
     'gatsby-plugin-eslint',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          netlifyCmsPaths,
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 930,
+              backgroundColor: 'transparent',
+            },
+          },
+        ],
+      },
+    },
   ],
 };
