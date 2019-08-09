@@ -1,6 +1,6 @@
 ---
 introduction:
-  image: /images/profile.png
-  text: tsafsaf  assssfsafsafas....
+  image: /images/arvid.png
+  text: tsafsaf  assssfsafsafas....s
 ---
 
