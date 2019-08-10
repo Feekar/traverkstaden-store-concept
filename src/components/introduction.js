@@ -29,13 +29,12 @@ const Introduction = () => {
     }
   `);
 
-  console.log(data);
   const content = data.allFile.edges[0].node.childMarkdownRemark.frontmatter.introduction;
   const imageData = content.image.childImageSharp.fluid;
 
   return (
     <BackgroundImage Tag="section" fluid={imageData} backgroundColor="#040e18" className={styles.introductionContainer}>
-      <h3>{content.text}</h3>
+      <p>{content.text}</p>
     </BackgroundImage>
   );
 };
