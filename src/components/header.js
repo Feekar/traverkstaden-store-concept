@@ -8,10 +8,13 @@ const Header = () => (
       <Link to="/">GÅRDSLÖTEN SNICKERI</Link>
       <div className={styles.navLinks}>
         <Link to="/" activeClassName={styles.activeLink}>
-          PORTFOLIO
+          Tjänster
         </Link>
         <Link to="/" activeClassName={styles.activeLink}>
-          KONTAKT
+          Portfolio
+        </Link>
+        <Link to="/" activeClassName={styles.activeLink}>
+          Kontakt
         </Link>
       </div>
     </nav>

@@ -18,7 +18,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         google: {
-          families: ['Nunito Sans'],
+          families: ['Work Sans'],
         },
         name: 'images',
         path: `${__dirname}/src/images`,
