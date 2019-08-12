@@ -15,10 +15,25 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
+      resolve: 'gatsby-plugin-prefetch-google-fonts',
+      options: {
+        fonts: [
+          {
+            family: 'Work Sans',
+            variants: ['400', '500', '700'],
+          },
+          {
+            family: 'Merriweather',
+            variants: ['300', '400', '700'],
+          },
+        ],
+      },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         google: {
-          families: ['Work Sans'],
+          families: ['Work Sans', 'Merriweather'],
         },
         name: 'images',
         path: `${__dirname}/src/images`,

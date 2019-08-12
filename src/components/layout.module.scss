@@ -4,6 +4,7 @@
 
 html{
     font-family: 'Work Sans', sans-serif;
+    color: var(--main-color-black);
 }
 
 body{
@@ -11,7 +12,5 @@ body{
 }
 
 main{
-    margin: 0 auto;
-    width:85vw;
-    max-width: 126rem;
+    margin: 0 1rem 1rem 1rem;
 }
