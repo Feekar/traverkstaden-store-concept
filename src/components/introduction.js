@@ -34,7 +34,7 @@ const Introduction = () => {
 
   return (
     <BackgroundImage Tag="section" fluid={imageData} backgroundColor="#040e18" className={styles.introductionContainer}>
-      <p>{content.text}</p>
+      <h1>{content.text}</h1>
     </BackgroundImage>
   );
 };

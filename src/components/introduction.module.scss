@@ -3,21 +3,42 @@
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 1.9rem;
     text-shadow: 0 0 15px black;
-    line-height: 1.4;
     height: calc(100vh - 7rem);
     font-family: 'Merriweather', serif;
-    font-weight: 300;
 
     &:before,
     &:after{
         filter: brightness(0.5) grayscale(0.4);
     }
 
-    p {
+    h1 {
         width: 90%;
         max-width: 50rem;
         text-align: center;
+        line-height: 1.5;
+        font-size: 1.8rem;
+        font-weight: 300;
+        margin-top:0;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .introductionContainer h1{
+        font-size:1.5rem;
+    }
+  }          
+
+  @media screen and (max-width: 760px) {
+    .introductionContainer {
+        height: calc(100vh - 9rem);
+
+        h1{
+            font-size:1.2rem;
+        }
+    }
+
+    .introductionContainer h1{
+        font-size:1.2rem;
+    }
+  }          

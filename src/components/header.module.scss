@@ -61,3 +61,30 @@
     font-weight: default;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .header {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .header {
+    nav {
+      height: 8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      div {
+        a {
+          margin: 0 0.8rem;
+  
+          &:not(:last-of-type):before{
+            right: -0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
