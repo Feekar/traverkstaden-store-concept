@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
+import { FiChevronsDown } from 'react-icons/fi';
 import styles from './introduction.module.scss';
 
 const Introduction = () => {
@@ -35,6 +36,7 @@ const Introduction = () => {
   return (
     <BackgroundImage Tag="section" fluid={imageData} backgroundColor="#040e18" className={styles.introductionContainer}>
       <h1>{content.text}</h1>
+      <FiChevronsDown className={styles.arrowDown} />
     </BackgroundImage>
   );
 };
