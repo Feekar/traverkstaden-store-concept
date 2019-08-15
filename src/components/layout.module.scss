@@ -11,10 +11,6 @@ body{
     min-height: 100vh;
 }
 
-main{
-    margin: 0 1rem 1rem 1rem;
-}
-
 h1,
 h2,
 h3,
@@ -27,4 +23,20 @@ h6{
 
 p {
     letter-spacing: 0.7px;
+    line-height: 1.7;
+    font-weight: 300;
+    font-size: 1.3em;
+}
+
+
+@media screen and (max-width: 1000px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    html{
+        font-size:12px;
+    }
 }

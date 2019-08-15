@@ -38,14 +38,18 @@ const Services = () => {
   return (
     <div className={styles.services}>
       <h2>Vad jag gör</h2>
-      {services.map(service => (
-        <Service
-          title={service.title}
-          text={service.text}
-          image={service.image}
-          key={service.title}
-        />
-      ))}
+      <div className={styles.servicesBackground}>
+        <section className={styles.servicesWrapper}>
+          {services.map(service => (
+            <Service
+              title={service.title}
+              text={service.text}
+              image={service.image}
+              key={service.title}
+            />
+          ))}
+        </section>
+      </div>
     </div>
   );
 };

@@ -47,14 +47,14 @@
   }
 
   nav > a:first-of-type {
-    font-size: 1.2rem;
-    font-weight:500;
+    font-weight: 600;
+    font-size: 18px;
+
   }
-  
 }
 
 .navLinks {
-  font-size: 1rem;
+  font-size: 18px;
 
   .activeLink {
     font-weight: default;
@@ -74,6 +74,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      padding: 1rem;
 
       div {
         a {
