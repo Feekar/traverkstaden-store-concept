@@ -30,21 +30,13 @@ collections:
           - {
               label: Tjänster,
               name: services,
-              widget: object,
+              widget: list,
               fields:
                 [
-                  {
-                    label: Möbler,
-                    name: furniture,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Titel, name: title, widget: string },
-                        { label: Text, name: text, widget: text },
-                        { label: Bild, name: image, widget: image },
-                      ],
-                  },
-                ],
+                  { label: Titel, name: title, widget: string },
+                  { label: Text, name: text, widget: text },
+                  { label: Bild, name: image, widget: image },
+                ]
             }
           # - {label: Titel, name: Titel, widget: markdown}
           # - {label: Text, name: text, widget: text}

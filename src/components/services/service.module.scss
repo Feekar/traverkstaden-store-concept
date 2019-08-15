@@ -1,0 +1,37 @@
+.service {
+    display: flex;
+    max-width: 50rem;
+    margin-bottom: 5rem;
+    position:relative;
+
+    &:nth-child(odd){
+        flex-direction: row-reverse;
+        align-self: flex-start;
+        margin-right: 0;
+        margin-left: auto;
+        text-align:end;
+    }    
+}
+
+.body{
+    padding: 2rem;
+    padding-top: 0.5rem;
+
+    h3{
+        font-size: 1.8rem;
+        margin-top: 0;
+    }
+
+    p {
+        line-height: 1.7;
+        font-size:1.1rem;
+    }
+
+}
+
+.image{
+    width: 15rem;
+    min-width: 15rem;
+    height: 15rem;
+}
+

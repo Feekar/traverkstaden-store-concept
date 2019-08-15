@@ -19,12 +19,8 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: 'Work Sans',
-            variants: ['400', '500', '700'],
-          },
-          {
-            family: 'Merriweather',
-            variants: ['300', '400', '700'],
+            family: 'Source Sans Pro',
+            variants: ['300', '400', '600'],
           },
         ],
       },
@@ -32,9 +28,6 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        google: {
-          families: ['Work Sans', 'Merriweather'],
-        },
         name: 'images',
         path: `${__dirname}/src/images`,
       },

@@ -1,0 +1,23 @@
+.services {
+    max-width: 80rem;
+    margin: 0 auto;
+    margin-top: 10rem;
+
+    h2 {
+        text-align: center;
+        font-size: 2.1rem;
+        margin-bottom: 8rem;
+        position: relative;
+
+        &:after {
+            width:13rem;
+            height:1px;
+            background: var(--color-black);
+            content: '';
+            position: absolute;
+            bottom: -1rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
