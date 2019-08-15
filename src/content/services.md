@@ -6,5 +6,8 @@ services:
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
     title: Möbler
+  - image: /images/dtew-shop.jpeg
+    text: ' do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.'
+    title: Sprutmåleri
 ---
 
