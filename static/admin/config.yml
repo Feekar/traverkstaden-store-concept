@@ -4,6 +4,14 @@ backend:
 media_folder: src/images
 public_folder: images
 collections:
+  - label: 'Portfolio'
+    name: 'portfolio'
+    editor:
+      preview: false
+    folder: src/content/portfolio
+    create: true
+    fields: 
+      - {label: "Titel", name: "title", widger: "string"}
   - label: 'Startsida'
     name: 'homepage'
     editor:
