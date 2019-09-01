@@ -4,11 +4,11 @@ backend:
 media_folder: src/images
 public_folder: images
 collections:
-  - label: 'Portfolio'
-    name: 'portfolio'
+  - label: 'Möbler'
+    name: 'furniture'
     editor:
       preview: false
-    folder: src/content/portfolio
+    folder: src/content/furniture
     create: true
     fields: 
       - { label: Namn, name: namn, widget: string }
