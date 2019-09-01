@@ -13,7 +13,7 @@ collections:
     fields: 
       - { label: Namn, name: namn, widger: string},
       - { label: Bild, name: image, widget: image },
-      - { label: Beskrivning, name: description, widger: string}
+      - { label: Beskrivning, name: description, widget: string}
       
   - label: 'Startsida'
     name: 'homepage'
