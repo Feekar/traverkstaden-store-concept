@@ -11,7 +11,10 @@ collections:
     folder: src/content/portfolio
     create: true
     fields: 
-      - {label: "Titel", name: "title", widger: "string"}
+      - { label: Namn, name: namn, widger: string}
+      - { label: Bild, name: image, widget: image },
+      - { label: Beskrivning, name: description, widger: string}
+      
   - label: 'Startsida'
     name: 'homepage'
     editor:
