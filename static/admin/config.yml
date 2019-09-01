@@ -11,7 +11,7 @@ collections:
     folder: src/content/furniture
     create: true
     fields: 
-      - { label: Namn, name: namn, widget: string }
+      - { label: Titel, name: title, widget: string }
       - { label: Bild, name: image, widget: image }
       - { label: Beskrivning, name: description, widget: string }
       
