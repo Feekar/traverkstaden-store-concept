@@ -7,11 +7,11 @@ const Header = () => (
     <nav>
       <Link to="/">GÅRDSLÖTEN SNICKERI</Link>
       <div className={styles.navLinks}>
-        <Link to="/" activeClassName={styles.activeLink}>
-          Tjänster
+        <Link to="/furnitures" activeClassName={styles.activeLink}>
+          Möbler
         </Link>
         <Link to="/" activeClassName={styles.activeLink}>
-          Portfolio
+          Tjänster
         </Link>
         <Link to="/" activeClassName={styles.activeLink}>
           Kontakt

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 import styles from './service.module.scss';
 
-const Section = ({ title, text, image }) => {
+const Service = ({ title, text, image }) => {
   const imageData = image.childImageSharp.fluid;
 
   return (
@@ -17,10 +17,10 @@ const Section = ({ title, text, image }) => {
   );
 };
 
-Section.propTypes = {
-  image: PropTypes.string.isRequired,
+Service.propTypes = {
+  image: PropTypes.object.isRequired, // eslint-disable-line
   title: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 };
 
-export default Section;
+export default Service;
