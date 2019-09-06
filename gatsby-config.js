@@ -9,10 +9,15 @@ module.exports = {
     title: 'Gårdslöten Snickeri',
   },
   plugins: [
-    'gatsby-plugin-netlify-cms',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     'gatsby-transformer-sharp',
+     {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        enableIdentityWidget: true,
+      },
+    },
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-prefetch-google-fonts',
