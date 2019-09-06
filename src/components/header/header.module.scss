@@ -1,6 +1,6 @@
 .header {
-  width: 90vw;
   margin: 0 auto;
+  width:95vw;
 
   nav { 
     letter-spacing: 1px;
@@ -34,16 +34,6 @@
           transition:0.15s;
           transform:scaleX(0);
           transform-origin:left;
-        }
-    
-        a:not(:last-of-type):before{
-          content: '';
-          position:absolute;
-          height:100%;
-          width:1px;
-          background: #ccc;
-          right:-2rem;
-          top:0;
         }
       }
   }

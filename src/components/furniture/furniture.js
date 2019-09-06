@@ -1,12 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Img from 'gatsby-image';
+import styles from './furniture.module.scss';
 
 const Furniture = ({ title, description, image }) => {
   const imageData = image.childImageSharp.fluid;
   console.log(imageData, title, description);
 
   return (
-    <span>{title}</span>
+    <div className={styles.furnitureContainer}>
+      <Img className={styles.image} fluid={imageData} />
+      <div>
+        <span>{title}</span>
+      </div>
+    </div>
   );
 };
 

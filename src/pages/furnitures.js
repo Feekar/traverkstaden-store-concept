@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Layout from '../components/layout';
 import Head from '../components/head';
 import Furniture from '../components/furniture/furniture';
+import styles from './furnitures.module.scss';
 
 const Furnitures = () => {
   const data = useStaticQuery(graphql`
@@ -33,7 +34,9 @@ const Furnitures = () => {
     <Layout>
       <>
         <Head title="Möbler | " />
-        {furnitures.map(furniture => <Furniture key={furniture.description} {...furniture} />)}
+        <section className={styles.container}>
+          {furnitures.map(furniture => <Furniture key={furniture.description} {...furniture} />)}
+        </section>
       </>
     </Layout>
   );
