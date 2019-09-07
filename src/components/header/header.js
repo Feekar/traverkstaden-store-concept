@@ -10,7 +10,7 @@ const Header = () => (
         <Link to="/furnitures" activeClassName={styles.activeLink}>
           Möbler
         </Link>
-        <Link to="/" activeClassName={styles.activeLink}>
+        <Link to="/#services" activeClassName={styles.activeLink}>
           Tjänster
         </Link>
         <Link to="/" activeClassName={styles.activeLink}>

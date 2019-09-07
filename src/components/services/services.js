@@ -36,7 +36,7 @@ const Services = () => {
   } = data.allFile.edges[0].node.childMarkdownRemark.frontmatter;
 
   return (
-    <div className={styles.services}>
+    <div id="services" className={styles.services}>
       <h2>Vad jag gör</h2>
       <div className={styles.servicesBackground}>
         <section className={styles.servicesWrapper}>

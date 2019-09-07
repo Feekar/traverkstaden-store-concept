@@ -9,7 +9,7 @@ const Furniture = ({ title, description, image }) => {
 
   return (
     <div className={styles.furnitureContainer}>
-      <Img className={styles.image} fluid={imageData} />
+      <Img className={styles.image} fluid={imageData} alt={description} />
       <div>
         <span>{title}</span>
       </div>
