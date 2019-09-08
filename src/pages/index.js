@@ -3,6 +3,7 @@ import Introduction from '../components/introduction/introduction';
 import Layout from '../components/layout';
 import Head from '../components/head';
 import Services from '../components/services/services';
+import Contact from '../components/contact/contact';
 
 const Index = () => (
   <Layout>
@@ -10,6 +11,7 @@ const Index = () => (
       <Head title="" />
       <Introduction />
       <Services />
+      <Contact />
     </>
   </Layout>
 );

@@ -19,6 +19,7 @@
         line-height: 1.5;
         font-size: 2rem;
         margin-top:0;
+        font-size:1.8rem;
     }
 }
 
@@ -32,6 +33,6 @@
 
 @media screen and (max-width: 760px) {
    .introductionContainer {
-      height: calc(100vh - 9rem);
+      height: calc(100vh - 11rem);
    }
 }          

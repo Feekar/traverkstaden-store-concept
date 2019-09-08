@@ -28,6 +28,26 @@ p {
     font-size: 1.3em;
 }
 
+h4,
+h2 {
+    font-size: 2.1rem;
+    margin: 0 auto;
+    position: relative;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 6rem;
+    padding-left:2rem;
+
+    &:after {
+        width:13rem;
+        height:1px;
+        background: var(--color-black);
+        content: '';
+        position: absolute;
+        bottom: -1rem;
+        left: 2rem;
+    }
+}
 
 @media screen and (max-width: 1000px) {
     html {

@@ -1,8 +1,8 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
+import { FiArrowRight } from 'react-icons/fi';
 import Service from './service';
 import styles from './services.module.scss';
-// import BackgroundImage from 'gatsby-background-image';
 
 const Services = () => {
   const data = useStaticQuery(graphql`
@@ -48,8 +48,13 @@ const Services = () => {
               key={service.title}
             />
           ))}
+          <a href="/furnitures" className={styles.linkButton}>
+            Se min portfolio
+            <FiArrowRight className={styles.arrowRight} />
+          </a>
         </section>
       </div>
+
     </div>
   );
 };
