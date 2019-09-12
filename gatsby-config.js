@@ -13,11 +13,12 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-transformer-sharp',
      {
-      resolve: `gatsby-plugin-netlify-cms`,
+      resolve: 'gatsby-plugin-netlify-cms',
       options: {
         enableIdentityWidget: true,
       },
     },
+    'gatsby-plugin-netlify-identity-widget',
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-prefetch-google-fonts',
