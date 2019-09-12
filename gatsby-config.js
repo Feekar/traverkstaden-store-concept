@@ -12,12 +12,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     'gatsby-transformer-sharp',
-     {
-      resolve: `gatsby-plugin-netlify-cms`,
-      options: {
-        enableIdentityWidget: true,
-      },
-    },
+    'gatsby-plugin-netlify-cms',
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-prefetch-google-fonts',
