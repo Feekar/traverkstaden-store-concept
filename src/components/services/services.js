@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 import { FiArrowRight } from 'react-icons/fi';
 import Service from './service';
 import styles from './services.module.scss';
@@ -48,10 +48,10 @@ const Services = () => {
               key={service.title}
             />
           ))}
-          <a href="/furnitures" className={styles.linkButton}>
-            Se min portfolio
+          <Link to="/furnitures" className={styles.linkButton}>
+            Se mina bilder
             <FiArrowRight className={styles.arrowRight} />
-          </a>
+          </Link>
         </section>
       </div>
 
