@@ -8,5 +8,8 @@
       }
     ],
     "linebreak-style": ["error", "windows"]
+  },
+  "env": {
+    "browser": true
   }
 }
