@@ -7,6 +7,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Gårdslöten Snickeri',
+    description: 'Jag tillverkar möbler och andra snickerier för inomhus och utomhusbruk efter dina egna ideér. Baserad på Norra Gårdslötsvägen i Åkersberga.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
