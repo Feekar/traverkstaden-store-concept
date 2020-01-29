@@ -1,1 +1,1 @@
-Build with GatsbyJS
+Built with GatsbyJS
