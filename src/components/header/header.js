@@ -5,7 +5,7 @@ import styles from './header.module.scss';
 const Header = () => (
   <header className={styles.header}>
     <nav>
-      <Link to="/">GÅRDSLÖTEN SNICKERI</Link>
+      <Link to="/">LOGO HERE</Link>
       <div className={styles.navLinks}>
         <Link to="/#services" activeClassName={styles.activeLink}>
           Tjänster
